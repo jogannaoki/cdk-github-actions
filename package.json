@@ -9,7 +9,9 @@
     "watch": "tsc -w",
     "test": "jest",
     "test:app": "jest --testMatch **/message.test.ts",
-    "cdk": "cdk"
+    "cdk": "cdk",
+    "cdk:diff": "cdk diff || true",
+    "cdk:deploy": "cdk deploy --require-approval never"
   },
   "devDependencies": {
     "@aws-cdk/assert": "^1.22.0",
